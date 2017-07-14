@@ -12,8 +12,8 @@
   <meta property="og:site_name" content="Портфолио верстальщика">
   <meta property="article:author" content="Дмитрий Калинин">
   <title>Дмитрий Калинин - Портфолио</title>
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link href="css/css.css" rel="stylesheet">
   <link rel="stylesheet" href="css/fontello.css">
   <link rel="stylesheet" href="css/fontello-embedded.css">
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
@@ -97,9 +97,9 @@
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Clos><span aria-hidden="true">&times;</span></button>
             <h4 class="modal-title">Описание проекта</h4>
-          </div>
+            </div>
           <div class="modal-body"></div>
         </div>
       </div>
@@ -107,8 +107,9 @@
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> 
+    
 
     <!-- Скрипт для модального окна --> 
 
@@ -118,10 +119,13 @@
         link.on('click', function(event) {
           var work = $(this).attr('data-work');
           var modal = $('.modal');
-          modal.find('.modal-body').load( work +'.html');
+          modal.find('.modal-body').load(work+'.html');
         });
       });
     </script>
+
+
+<!-- Скрипт плавной прокрунки --> 
 
     <script>
 $(document).ready(function() {
@@ -133,5 +137,6 @@ $(document).ready(function() {
     });
 });
     </script>
+
 </body>
 </html>
